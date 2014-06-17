@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+
+  "name": "Dyslexia Color Filter",
+  "description": "Adds a coloured filtered to webpages to aid dislexics.",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "overlay.js"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+  "permissions": [
+    "<all_urls>",
+    "storage"
+  ],
+  
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  }
+}

@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Dyslexia Filter</title>
+    <style>
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        src: url('../fonts/Open Sans.woff') format('woff');
+      }
+      
+      body {
+        min-width: 330px;
+        overflow-x: hidden;
+        font-family: 'Open Sans';
+      }
+      
+      .button {
+        height: 40px;
+        width: 60px;
+        border: 1px solid black;
+        background-color: transparent;
+        float: left;
+        margin: 10px;
+      }
+      
+      .button:hover {
+        cursor: pointer;
+      }
+      
+      .button_inner {
+        height: 36px;
+        width: 56px;
+        margin: 2px;
+      }
+      
+      #blank_button {
+        width: 72px;
+        height: 1px;
+        border-bottom:
+        1px solid red;
+        -webkit-transform: translateY(18px) translateX(-6px) rotate(34deg); 
+      }
+    </style>
+    <script src="popup.js"></script>
+  </head>
+  <body>
+  <p style="clear:both">Presets:</p>
+  <div data-color="transparent" class="button">
+    <div id="blank_button"></div>
+  </div>
+  <div data-color="lime" class="button">
+    <div class="button_inner" style="background-color:lime;"></div>
+  </div>
+  <div data-color="blue" class="button">
+    <div class="button_inner" style="background-color:blue;"></div>
+  </div>
+  <div data-color="purple" class="button">
+    <div class="button_inner" style="background-color:purple;"></div>
+  </div>
+  </body>
+</html>
