@@ -36,3 +36,4 @@ nosetests.xml
 
 # Cloud9
 .c9*
+.settings
